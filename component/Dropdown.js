@@ -228,7 +228,7 @@ class Dropdown extends React.Component {
                     this._setMinHeight.bind(this)
                 }}
                 onPress={ ()=>this._toggleDropdown()}>
-                <View style={ [styles.menuButton, this.optionalStyles.buttonStyle, {flex:1, flexDirection:'row', justifyContent: 'space-between',} ]}>
+                <View style={ [styles.menuButton, this.optionalStyles.buttonStyle, {flex:1, flexDirection:'row', alignItems:'center', justifyContent: 'space-between',} ]}>
                     <Text style={{fontSize:15,}}>
                         {this.optionalProps.title}
                     </Text>
