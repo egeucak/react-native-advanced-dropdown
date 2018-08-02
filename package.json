@@ -1,0 +1,32 @@
+{
+  "name": "react-native-advanced-dropdown",
+  "version": "1.0.0",
+  "description": "A react native component for creating highly customizable, paginated and searchable dropdown menus",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/egeucak/react-native-advanced-dropdown.git"
+  },
+  "keywords": [
+    "react-native",
+    "dropdown",
+    "advanced-dropdown",
+    "searchable",
+    "paginated"
+  ],
+  "author": "Ege Ucak <egeucak75@gmail.com>",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/egeucak/react-native-advanced-dropdown/issues"
+  },
+  "homepage": "https://github.com/egeucak/react-native-advanced-dropdown#readme",
+  "dependencies": {
+    "fuse.js": "^3.2.1",
+    "react": "16.3.1",
+    "react-native": "~0.55.2",
+    "react-native-vector-icons": "^5.0.0"
+  }
+}
