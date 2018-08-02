@@ -143,6 +143,7 @@ class Dropdown extends React.Component {
     _renderDropdownElements = () => {
         let entries = Object(this.state.searchResult).length ? this.state.searchResult : this.state.data;
         entries=this._paginate(entries)[this.state.currentPage-1];
+        if(entries === undefined) return;
         let data = entries.map( dataEntry=> ({key: Object.keys(dataEntry).includes("item") ? dataEntry.item.label : dataEntry.label, func: Object.keys(dataEntry).includes("item") ? dataEntry.item.func : dataEntry.func })  );
 
         return (
@@ -389,3 +390,4 @@ const styles= StyleSheet.create({
 })
 
 export default Dropdown;
+
