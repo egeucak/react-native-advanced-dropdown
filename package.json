@@ -1,6 +1,6 @@
 {
   "name": "react-native-advanced-dropdown",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A react native component for creating highly customizable, paginated and searchable dropdown menus",
   "main": "index.js",
   "scripts": {
