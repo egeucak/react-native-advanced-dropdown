@@ -228,10 +228,11 @@ class Dropdown extends React.Component {
                     this._setMinHeight.bind(this)
                 }}
                 onPress={ ()=>this._toggleDropdown()}>
-                <View style={ [styles.menuButton, this.optionalStyles.buttonStyle] }>
+                <View style={ [styles.menuButton, this.optionalStyles.buttonStyle, {flex:1, flexDirection:'row', justifyContent: 'space-between',} ]}>
                     <Text style={{fontSize:15,}}>
-                        {this.optionalProps.title} <Icon size={15} name={"ios-arrow-dropdown"} />
+                        {this.optionalProps.title}
                     </Text>
+                    <Icon size={20} name={"ios-arrow-dropdown"} />
                 </View>
             </TouchableWithoutFeedback>
         )
