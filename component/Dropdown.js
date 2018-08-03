@@ -144,7 +144,10 @@ class Dropdown extends React.Component {
         let entries = Object(this.state.searchResult).length ? this.state.searchResult : this.state.data;
         entries=this._paginate(entries)[this.state.currentPage-1];
         if(entries === undefined) return;
-        let data = entries.map( dataEntry=> ({key: Object.keys(dataEntry).includes("item") ? dataEntry.item.label : dataEntry.label, func: Object.keys(dataEntry).includes("item") ? dataEntry.item.func : dataEntry.func })  );
+        let data = entries.map( dataEntry=> ({label: Object.keys(dataEntry).includes("item") ? dataEntry.item.label : dataEntry.label,
+            func: Object.keys(dataEntry).includes("item") ? dataEntry.item.func : dataEntry.func ,
+            key: Object.keys(dataEntry).includes("item") ? dataEntry.item.key : dataEntry.key
+        })  );
 
         return (
             <FlatList style={{
@@ -152,7 +155,7 @@ class Dropdown extends React.Component {
             }} data={data} renderItem={({item}) => (
                 <TouchableHighlight key={item.key} onPress={ () => this._onPressButton(item.key, item.func)} underlayColor="white">
                     <View >
-                        <Text style={styles.item}>{item.key}</Text>
+                        <Text style={styles.item}>{item.label}</Text>
                     </View>
                 </TouchableHighlight>
 
@@ -390,4 +393,5 @@ const styles= StyleSheet.create({
 })
 
 export default Dropdown;
+
 
