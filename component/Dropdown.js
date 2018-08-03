@@ -100,6 +100,12 @@ class Dropdown extends React.Component {
     }
 
     _toggleDropdown = () => {
+        if (this.state.dropdownOpen){
+            this.setState({
+                searchQuery : "",
+                searchResult: this.props.data,
+            })
+        }
         this.setState({dropdownOpen:!!((this.state.dropdownOpen+1)%2)});
     }
 
