@@ -23,7 +23,7 @@
     "url": "https://github.com/egeucak/react-native-advanced-dropdown/issues"
   },
   "homepage": "https://github.com/egeucak/react-native-advanced-dropdown#readme",
-  "dependencies": {
+  "devDependencies": {
     "fuse.js": "^3.2.1",
     "react": "16.3.1",
     "react-native": "~0.55.2",
